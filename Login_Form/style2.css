@@ -1,0 +1,132 @@
+body {
+	background-image: url(bg.jpg);
+	/*background-repeat: no-repeat;*/
+	background-size: cover;
+	font-family: arial;
+}
+
+.container {
+	width: 450px;
+	height: 600px;
+	margin: 50px auto;
+	position: relative;
+	border-radius: 50px;
+	/*background-color: #66acbc;*/
+	/*background-color: white;*/
+	background-image: url(bg.jpg);
+	background-size: cover;
+	box-sizing: border-box;
+	box-shadow: 0 0 34px 4px black;
+}
+
+.main {
+	width: 450px;
+	height: 600px;
+	color: white;
+	position: absolute;
+	background-color: rgba(50 50 50 / 35%);
+	border-radius: 50px;
+	padding: 10px;
+	box-sizing: border-box;
+}
+
+.judul h1 {
+	text-align: center;
+}
+
+.main table {
+	margin: auto;
+}
+
+.main td {
+	padding: 10px;
+}
+
+#ndepan, #nbelakang {
+	border-top: 0;
+	border-bottom: 1px solid white;
+	border-left: 0;
+	border-right: 0;
+	background: none;
+	color: white;
+	padding: 10px;
+}
+
+#ndepan::placeholder, #nbelakang::placeholder, #password::placeholder, #email::placeholder, #nohp::placeholder {
+	color: white;
+	text-align: left;
+	font-size: 
+}
+
+
+#ndepan {
+	width: 80px;
+}
+
+#password, #email, #nohp {
+	width: 282px;
+	border-top: 0;
+	border-bottom: 1px solid white;
+	border-left: 0;
+	border-right: 0;
+	background: none;
+	color: white;
+	padding: 10px;
+}
+
+
+.jkel {
+	text-align: center;
+}
+
+.date {
+	text-align: center;
+}
+
+#Tanggal, #Tempat {
+	border-top: 0;
+	border-bottom: 1px solid white;
+	border-left: 0;
+	border-right: 0;
+	background-color: white;
+	border-radius: 50px;
+	padding: 5px;
+}
+
+.tombol {
+	margin-left: 96px;
+}
+
+button {
+	background: none;
+	width: 100px;
+	height: 30px;
+	color: white;
+	border-radius: 30px;
+	border: 1px solid white;
+	font-weight: bold;
+	margin-top: 20px;
+	margin-left: 10px;
+	line-height: 0px;
+}
+
+button a {
+	font-size: 13px;
+	text-decoration: none;
+	color: white;
+
+}
+
+
+
+.copyright {
+    position: absolute;
+    left: -405px;
+    bottom: -49px;
+}
+
+.copyright a {
+	text-decoration: none;
+	color: white;
+	font-size: 13px;
+}
