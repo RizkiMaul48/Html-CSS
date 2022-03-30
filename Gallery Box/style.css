@@ -1,0 +1,268 @@
+body {
+	background-image: url(image/bg.png);
+	font-family: arial;
+}
+
+.container {
+	width: 1000px;
+	margin: 50px auto; 
+	background-color: white;
+	box-shadow: 10px 10px 20px 1px black;
+	padding: 10px;
+	box-sizing: border-box;
+}
+
+.judul h1 {
+	text-align: center;
+	font-size: 30px;
+	font-weight: bold;
+	padding: 20px;
+}
+
+/*Gambar*/
+.gambar {
+	padding: 20px;
+	box-sizing: border-box;
+	margin:auto 100px;
+}
+
+.gambar li {
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	border: 5px solid black;
+	position: relative;	
+	overflow: hidden;
+	float: left;
+	margin-left: 20px;
+}
+
+.gambar img {
+	width: 200px;
+	height: 200px;
+	background-repeat: no-repeat;
+	filter: blur(10px);
+}
+
+.gambar span {
+	width: 200px;
+	height: 200px;
+	/*background-color: rgba(245,245,245,.5);*/
+	position: absolute;
+	text-align: center;
+	color: black;
+	font-weight: bold;
+	text-decoration: none;
+	line-height: 200px;
+	border-radius: 50%;
+	top: 0;
+	left: 0;
+	transform: scale(0);
+	transform: rotate(0deg);
+	opacity: 0;
+	transition: 1s;
+}
+
+.gambar a:hover span {
+	background-color: rgba(245,245,245,.5);
+	transform: scale(1);
+	transform: rotate(360deg);
+	opacity: 1;
+}
+/*Gambar*/
+
+/*overlay*/
+
+/*overlay Background*/
+.overlay {
+	background-color: rgba(0,0,0,.0);
+	position: fixed;
+	transition: 1s;
+	top: 0;
+	left: 0;	
+	z-index: 999;	
+}
+
+.overlay:target {
+	background-color: rgba(0,0,0,.5);
+	bottom: 0;
+	right: 0;
+	opacity: 1;
+}
+
+/*overlay Background*/
+
+.overlay img {
+	opacity: 0;
+	background: none;
+	position: relative;
+	transform: scale(0);	
+}
+
+.overlay:target img {
+    top: 155px;
+    left: 32%;
+    width: 500px;
+    height: 300px;
+    transform: scale(1);
+    position: absolute;
+    opacity: 1;
+    animation: animasigambar 1s forwards;
+    border-radius: 40px;
+    box-shadow: 4px 10px 9px 5px black;
+
+}
+
+/*overlay Background*/
+
+/*overlay Tombol*/
+.overlay .close {
+	margin-left: -200px;
+	position: absolute;
+
+}
+
+.overlay:target .close {
+    top: 100px;
+    left: 848px;
+    font-size: 20px;
+    padding: 5px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    border: 3px solid white;
+    color: white;
+    opacity: 1;
+    text-decoration: none;
+    animation: animasiclose 2s forwards;
+}
+
+/* Navigasi */
+.next {
+	background-image: url(image/right.png);
+	width: 46px;
+	height: 82px;
+	margin-left: -50px;
+	overflow: hidden;
+	position: absolute;
+	top: 0;
+	left: 0;
+	opacity: 0;
+}
+
+.overlay:target .next {
+    width: 46px;
+    height: 82px;
+    left: 1005px;
+    top: 265px;
+    position: absolute;
+    opacity: 1;
+    animation: animasinavigasi 2s forwards;
+}
+
+
+.prev {
+	background-image: url(image/left.png);
+	width: 46px;
+	height: 82px;
+	margin-left: -50px;
+	overflow: hidden;
+	position: absolute;
+	top: 0;
+	left: 0;
+	opacity: 0;
+}
+
+.overlay:target .prev {
+    width: 46px;
+    height: 82px;
+    left: 420px;
+    top: 265px;
+    position: absolute;
+    opacity: 1;
+    animation: animasinavigasi 2s forwards;
+}
+
+/* Navigasi */
+
+
+/*Animasi / Keyframe*/
+@keyframes animasigambar {
+	0% {
+		transform: scale(0);
+		opacity: 0;
+	}
+
+	100% {
+		transform: scale(1);
+		opacity: 1;
+		filter: grayscale(0);
+	}
+}
+
+@keyframes animasiclose {
+	0% {
+		transform: scale(0);
+		opacity: 0;
+		top: 0;
+	}
+
+	50% {
+		top: 1;
+	}
+
+	100% {
+		transform: scale(1);
+		opacity: 1;
+	}
+}
+
+@keyframes animasinavigasi {
+	0% {
+		transform: scale(0);
+		opacity: 0;
+	}
+
+	100% {
+		transform: scale(1);
+		opacity: 1;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Clear */
+.clear {
+	clear: both;
+}
